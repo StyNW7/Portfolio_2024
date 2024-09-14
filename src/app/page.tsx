@@ -5,6 +5,8 @@ import HeroSection from './components/heroSection';
 import AboutMe from './components/aboutMe';
 import Footer from './components/footer';
 import ProjectCard from './components/projectCard';
+import SkillsTools from './components/skillsTools';
+import MyProjects from './components/projects';
 
 const HomePage: React.FC = () => {
   return (
@@ -12,12 +14,8 @@ const HomePage: React.FC = () => {
       <Header />
       <HeroSection />
       <AboutMe />
-      <ProjectCard
-        title="xStyNWx"
-        description="Hello world!"
-        imageUrl="/images/pp.png"
-        projectLink="https://bento.me/snw77"
-      />
+      <SkillsTools />
+      <MyProjects />
       <Footer />
     </>
   );

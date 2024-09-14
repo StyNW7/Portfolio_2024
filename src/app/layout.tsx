@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "xStyNWx",
+  title: "SNW",
   description: "Portfolio of Stanley Nathanael Wijaya",
 };
 
@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/images/pp.png" type="image/png" />
       <body className={inter.className}>{children}</body>
     </html>
   );
