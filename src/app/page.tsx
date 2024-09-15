@@ -1,12 +1,12 @@
 // src/app/page.tsx
 import React from 'react';
+import Typed from 'react-typed'
 import Header from './components/header';
-import HeroSection from './components/heroSection';
 import AboutMe from './components/aboutMe';
 import Footer from './components/footer';
-import ProjectCard from './components/projectCard';
 import SkillsTools from './components/skillsTools';
 import MyProjects from './components/projects';
+import HeroSection from './components/heroSection';
 
 const HomePage: React.FC = () => {
   return (

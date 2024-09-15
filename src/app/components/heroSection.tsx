@@ -1,13 +1,54 @@
-// src/app/components/HeroSection.tsx
-import React from 'react';
+"use client"; // Ensure this component is rendered on the client side
+
+import React, { useEffect, useState } from 'react';
+import '../../styles/typeWriter.css';
 
 const HeroSection: React.FC = () => {
+  const [textIndex, setTextIndex] = useState(0);
+  const texts = [
+    "Hello World",
+    "I'm a Fullstack Developer",
+    "Stanley Nathanael Wijaya"
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 4000); // Switch text every 4 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section className="bg-cover bg-center h-screen" style={{ backgroundImage: 'url("/path-to-your-image.jpg")' }}>
-      <div className="container mx-auto h-full flex flex-col justify-center items-center text-white text-center">
-        <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
-        <p className="text-xl mt-4">I am a web developer passionate about creating amazing user experiences.</p>
-        <a href="#projects" className="mt-8 px-6 py-3 bg-blue-500 rounded-full hover:bg-blue-600 transition">See My Work</a>
+    <section className="relative h-screen bg-gray-900 text-white flex flex-col justify-center items-center">
+      <div className="z-10 text-center">
+        <h1 className="text-5xl md:text-7xl font-bold font-mono mb-4 typewriter">
+          {texts[textIndex]}
+        </h1>
+        <p className="text-lg md:text-2xl mt-4">
+          Creating robust web applications with modern technologies.
+        </p>
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+          <a
+            href="#about" // Change this to the next section's id
+            className="flex items-center justify-center w-10 h-10 border-2 border-white rounded-full animate-bounce"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,50 @@
+/* src/components/CustomCursor.css */
+.custom-cursor {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  
+  .custom-cursor.hovered {
+    backdrop-filter: blur(0px);
+    transform: translate(-50%, -50%) scale(2.5);
+    background-color: transparent;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hilangkan default cursor pointer saat hover pada elemen */
+  a, button {
+    cursor: none;
+  }
+  
+  /* Untuk elemen yang di-hover dengan class 'hover-target' */
+  .hover-target:hover .custom-cursor {
+    cursor: none;
+  }
+  
+  body {
+    cursor: none;
+  }
+  
+  /* Tambahan animasi yang lebih halus */
+  .custom-cursor.hovered {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Glassmorphism Effect */
+  .custom-cursor {
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+  }
+  
