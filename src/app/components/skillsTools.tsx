@@ -1,24 +1,49 @@
 "use client"; // Untuk menandai sebagai Client Component
 
 import React, { useState } from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiTypescript, SiVisualstudiocode, SiFigma, SiPostman, SiDocker } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGitAlt, FaJava, FaPython, FaPhp, FaBootstrap, FaNodeJs, FaSass } from 'react-icons/fa';
+import { SiTypescript, SiVisualstudiocode, SiFigma, SiPostman, SiDocker, SiNextdotjs, SiC, SiCplusplus, SiCsharp, SiDart, SiGo, SiGraphql, SiMarkdown, SiR, SiMicrosoftazure, SiVercel, SiGithub, SiFirebase, SiDotnet, SiDjango, SiExpo, SiGatsby, SiFlutter } from 'react-icons/si';
 
 const skills = [
-  { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
-  { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: 'C', icon: <SiC className="text-blue-600" /> },
+  { name: 'C++', icon: <SiCplusplus className="text-blue-600" /> },
+  { name: 'C#', icon: <SiCsharp className="text-purple-500" /> },
+  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: 'Dart', icon: <SiDart className="text-blue-500" /> },
+  { name: 'Go', icon: <SiGo className="text-blue-400" /> },
+  { name: 'GraphQL', icon: <SiGraphql className="text-pink-500" /> },
+  { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
+  { name: 'Java', icon: <FaJava className="text-orange-500" /> },
   { name: 'JavaScript', icon: <FaJsSquare className="text-yellow-500" /> },
-  { name: 'React', icon: <FaReact className="text-blue-300" /> },
+  { name: 'Markdown', icon: <SiMarkdown className="text-black" /> },
+  { name: 'Python', icon: <FaPython className="text-blue-600" /> },
+  { name: 'R', icon: <SiR className="text-blue-400" /> },
+  { name: 'PHP', icon: <FaPhp className="text-indigo-500" /> },
   { name: 'TypeScript', icon: <SiTypescript className="text-blue-500" /> },
+  { name: 'Firebase', icon: <SiFirebase className="text-yellow-400" /> },
+  { name: '.Net', icon: <SiDotnet className="text-purple-700" /> },
+  { name: 'Bootstrap', icon: <FaBootstrap className="text-purple-500" /> },
+  { name: 'Django', icon: <SiDjango className="text-green-600" /> },
+  { name: 'Gatsby', icon: <SiGatsby className="text-purple-600" /> },
+  { name: 'Flutter', icon: <SiFlutter className="text-blue-500" /> },
+  { name: 'NodeJS', icon: <FaNodeJs className="text-green-600" /> },
+  { name: 'React', icon: <FaReact className="text-blue-300" /> },
+  { name: 'React Native', icon: <FaReact className="text-blue-300" /> },
+  { name: 'SASS', icon: <FaSass className="text-pink-500" /> },
 ];
 
+
 const tools = [
+  { name: 'Azure', icon: <SiMicrosoftazure className="text-blue-400" /> },
+  { name: 'Vercel', icon: <SiVercel className="text-black" /> },
+  { name: 'GitHub Pages', icon: <SiGithub className="text-black" /> },
+  { name: 'Expo', icon: <SiExpo className="text-black" /> },
+  { name: 'Docker', icon: <SiDocker className="text-blue-400" /> },
   { name: 'VSCode', icon: <SiVisualstudiocode className="text-blue-400" /> },
   { name: 'Git', icon: <FaGitAlt className="text-orange-600" /> },
   { name: 'Figma', icon: <SiFigma className="text-red-500" /> },
-  { name: 'Postman', icon: <SiPostman className="text-orange-400" /> },
-  { name: 'Docker', icon: <SiDocker className="text-blue-300" /> },
 ];
+
 
 const SkillsTools: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'skills' | 'tools'>('skills');
