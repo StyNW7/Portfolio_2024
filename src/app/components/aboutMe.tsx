@@ -33,7 +33,7 @@ const AboutMe: React.FC = () => {
             I love solving problems and building digital experiences that make an impact.
           </p>
           <p className="mt-4 text-lg leading-relaxed">
-            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I am always open to new opportunities and collaborations.
+            When I am not coding, you will find me exploring new technologies, contributing to open-source projects, or enjoying a good book. I am always open to new opportunities and collaborations.
           </p>
 
           {/* Download CV Button */}
