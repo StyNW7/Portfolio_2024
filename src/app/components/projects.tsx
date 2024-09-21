@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Game Development',
     subtitle: 'A 2D platformer game developed in Unity.',
-    imageUrl: '/images/projects/koktahu.png',
+    imageUrl: '/images/projects/koktahu1.png',
     tags: ['Game', 'Unity', 'C#'],
     specialTags: [],
     link: 'https://github.com/username/game',
