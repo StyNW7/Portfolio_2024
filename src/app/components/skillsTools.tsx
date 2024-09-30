@@ -49,7 +49,7 @@ const SkillsTools: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'skills' | 'tools'>('skills');
 
   return (
-    <section id="skills-tools" className="py-20 bg-gray-900 text-white">
+    <section id="skills" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-4xl font-bold text-center mb-10">Skills & Tools</h2>
 
