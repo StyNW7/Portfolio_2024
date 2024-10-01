@@ -49,7 +49,7 @@ const projects = [
     subtitle: 'Replicate an official Naruto Website built with Simple Web Design',
     imageUrl: '/images/projects/naruto.png',
     tags: ['HTML5', 'CSS', 'JavaScript', 'jQuery'],
-    specialTags: ['Django Website'],
+    specialTags: ['Web'],
     link: 'https://stynw7.github.io/Naruto/',
   },
   {

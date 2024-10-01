@@ -47,7 +47,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto flex justify-between items-center px-10">
         
         <h1 className="text-2xl font-bold">
-          <Link href="/">Stanley Wijaya</Link>
+          <Link href="#home">Stanley Wijaya</Link>
         </h1>
 
         <div className="md:hidden z-50">
