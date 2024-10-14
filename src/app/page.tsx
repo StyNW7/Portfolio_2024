@@ -1,6 +1,6 @@
 // src/app/page.tsx
 import React from 'react';
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import Header from './components/header';
 import AboutMe from './components/aboutMe';
 import Footer from './components/footer';

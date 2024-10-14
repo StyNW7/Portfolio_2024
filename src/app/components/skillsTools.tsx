@@ -45,6 +45,9 @@ const SkillsTools: React.FC = () => {
 
   return (
     <section id="skills" className="py-20 bg-gray-900 text-white">
+
+      {/* Navigation Button */}
+
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-4xl font-bold text-center mb-10">Skills & Tools</h2>
 
@@ -67,6 +70,8 @@ const SkillsTools: React.FC = () => {
           </button>
         </div>
 
+        {/* Section Skills or Tools */}
+
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mx-auto" style={{ width: '100%' }}>
           {(activeTab === 'skills' ? skills : tools).map((item) => (
             <div
@@ -82,7 +87,9 @@ const SkillsTools: React.FC = () => {
         </div>
 
       </div>
+
     </section>
+
   );
 };
 
